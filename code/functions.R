@@ -100,7 +100,7 @@ majority_rule <- function(x) {
 
 #### get_grid_classification_l1 =========================================================
 
-get_grid_classification_l1 <- function(pop_grid, uninhabited = NA) {
+get_grid_classification_l1 <- function(pop_grid, uninhabited_na = TRUE) {
   
   names(pop_grid) <- "pop1sqkm"
   
@@ -179,7 +179,7 @@ get_grid_classification_l1 <- function(pop_grid, uninhabited = NA) {
                                          pop_grid$urban_cluster == 0, 
                                        cells = FALSE)
   
-  if (is.na(uninhabited)) {
+  if (uninhabited_na == TRUE) {
     raster::values(pop_grid$rural_grid)[which(is.na(pop_grid$pop1sqkm[]))] <- NA
   }
   
@@ -197,7 +197,7 @@ get_grid_classification_l1 <- function(pop_grid, uninhabited = NA) {
 
 #### get_grid_classification_l2 =========================================================
 
-get_grid_classification_l2 <- function(pop_grid, uninhabited = NA) {
+get_grid_classification_l2 <- function(pop_grid, uninhabited_na = TRUE) {
   # set parameters
   cell_rule_dense <- expression(raster_layer_pop >= 1500) 
   cell_rule_semi_dense <- expression(raster_layer_pop >= 300)
@@ -294,7 +294,7 @@ get_grid_classification_l2 <- function(pop_grid, uninhabited = NA) {
   raster::values(pop_grid$rural_cluster) <- ifelse(is.na(pop_grid$rural_cluster[]), 0, 1)
   
   
-  if (uninhabited == "rural") {
+  if (uninhabited_na == FALSE) {
     raster::values(pop_grid$very_low_density_rural_cells)[which(is.na(pop_grid$pop1sqkm[]))] <- 1
   }
   
@@ -325,23 +325,23 @@ get_fua <- function(pop_grid, fua_polygon) {
                                  y = raster::raster(raster::extent(pop_grid),
                                                     resolution = raster::res(pop_grid),
                                                     crs = raster::crs(pop_grid)))
-  #names(fua_grid) <- "fua"
+  names(fua_grid) <- "fua"
 
   # add the functional urban area grid to the population grid
-  #fua_grid <- fua_grid %>%
-  #  raster::addLayer(pop_grid)
+  fua_grid <- fua_grid %>%
+    raster::addLayer(pop_grid)
   
   # filter functional urban areas with 250K inhabitants or more
-  #fua_pop <- fua_grid$pop1sqkm %>%
-  #  raster::zonal(z = fua_grid$fua,
-  #                fun = "sum") %>%
-  #  as.data.frame() %>%
-  #  dplyr::mutate(pop_thresh = ifelse(sum >= 250000, TRUE, FALSE)) %>%
-  #  dplyr::filter(pop_thresh == TRUE)
-  #fua_grid <- raster::Which(fua_grid$fua %in% fua_pop$zone) %>%
-  #  raster::addLayer(fua_grid, .) %>%
-  #  raster::dropLayer("fua")
-  #names(fua_grid)[2] <- "fua"
+  fua_pop <- fua_grid$pop1sqkm %>%
+    raster::zonal(z = fua_grid$fua,
+                  fun = "sum") %>%
+    as.data.frame() %>%
+    dplyr::mutate(pop_thresh = ifelse(sum >= 250000, TRUE, FALSE)) %>%
+    dplyr::filter(pop_thresh == TRUE)
+  fua_grid$fua_metro <- raster::Which(fua_grid$fua %in% fua_pop$zone)
+  fua_grid <- fua_grid[[c("fua", "fua_metro")]]
+  fua_grid$fua <- fua_grid$fua %>% raster::Which()
+  
   return(fua_grid)
 }
 
@@ -353,8 +353,10 @@ get_spatial_classification_l1 <- function(grid_classification, polygons, fua = F
   # set expression if fua TRUE
   if (fua == TRUE) {
     fua_expr <- expression(sum(pop1sqkm[fua == 1]*coverage_fraction[fua == 1], na.rm = TRUE))
+    fua_metro_expr <- expression(sum(pop1sqkm[fua_metro == 1]*coverage_fraction[fua_metro == 1], na.rm = TRUE))
   } else {
     fua_expr <- expression(NA)
+    fua_metro_expr <- expression(NA)
   }
   
   # extract raster population counts and cluster types in polygons
@@ -372,7 +374,8 @@ get_spatial_classification_l1 <- function(grid_classification, polygons, fua = F
                      urban_centre_pop = sum(pop1sqkm[urban_centre == 1]*coverage_fraction[urban_centre == 1], na.rm = TRUE),
                      urban_cluster_pop = sum(pop1sqkm[urban_cluster == 1]*coverage_fraction[urban_cluster == 1], na.rm = TRUE),
                      rural_grid_pop = sum(pop1sqkm[rural_grid == 1]*coverage_fraction[rural_grid == 1], na.rm = TRUE),
-                     fua_pop = eval(fua_expr)) %>%
+                     fua_pop = eval(fua_expr),
+                     fua_metro_pop = eval(fua_metro_expr)) %>%
     dplyr::mutate(degurba_l1 = factor(case_when(urban_centre_pop >= total_pop*0.5 ~ "cities",
                                                 urban_centre_pop < total_pop*0.5 & 
                                                   rural_grid_pop <= total_pop*0.5 ~ "towns and semi-dense areas",
@@ -381,8 +384,10 @@ get_spatial_classification_l1 <- function(grid_classification, polygons, fua = F
   if (fua == TRUE) {
     polygon_values <- polygon_values %>%
       dplyr::mutate(fua = factor(case_when(fua_pop >= total_pop*0.5 ~ "functional urban area",
-                                    TRUE ~ NA_character_))) %>%
-      dplyr::select(degurba_l1, fua)
+                                    TRUE ~ NA_character_)),
+                    fua_metro = factor(case_when(fua_metro_pop >= total_pop*0.5 ~ "metropolitan functional urban area",
+                                           TRUE ~ NA_character_))) %>%
+      dplyr::select(degurba_l1, fua, fua_metro)
   } else {
     polygon_values <- polygon_values %>%
       dplyr::select(degurba_l1)
@@ -414,7 +419,7 @@ get_spatial_classification_l2 <- function(grid_classification, spatial_classific
                      very_low_density_rural_cells_pop = sum(pop1sqkm[very_low_density_rural_cells == 1]*coverage_fraction[very_low_density_rural_cells == 1], na.rm = TRUE)
                      ) %>%
     cbind(spatial_classification_l1) %>%
-    dplyr::mutate(degurba_l2 = factor(case_when(degurba_l1 == "cities" ~ "cities"
+    dplyr::mutate(degurba_l2 = factor(case_when(degurba_l1 == "cities" ~ "cities",
                                                 degurba_l1 == "towns and semi-dense areas" &
                                                   dense_urban_cluster_pop > semi_dense_urban_cluster_pop & 
                                                   dense_urban_cluster_pop + semi_dense_urban_cluster_pop > suburban_cells_pop ~ "dense towns",
@@ -428,7 +433,13 @@ get_spatial_classification_l2 <- function(grid_classification, spatial_classific
                                                 degurba_l1 == "rural areas" &
                                                   low_density_rural_cells_pop > rural_cluster_pop & low_density_rural_cells_pop > + very_low_density_rural_cells_pop ~ "dispersed rural areas",
                                                 degurba_l1 == "rural areas" &
-                                                  very_low_density_rural_cells_pop > rural_cluster_pop & very_low_density_rural_cells_pop > low_density_rural_cells_pop ~ "mostly uninhabited rural areas"))) %>%
-    dplyr::select(degurba_l1, degurba_l2)
+                                                  very_low_density_rural_cells_pop > rural_cluster_pop & very_low_density_rural_cells_pop > low_density_rural_cells_pop ~ "mostly uninhabited rural areas")))
+  if ("fua" %in% colnames(polygon_values)) {
+    polygon_values <- polygon_values %>%
+      dplyr::select(degurba_l1, degurba_l2, fua, fua_metro)
+  } else {
+    polygon_values <- polygon_values %>%
+      dplyr::select(degurba_l1, degurba_l2)
+  }
   return(polygon_values)
 }

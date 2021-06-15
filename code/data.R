@@ -35,6 +35,12 @@ setwd("D://projects/rude/")
 source("./code/packages.R")
 source("./code/functions.R")
 
+# create data folder
+path <- file.path("data")
+if (!dir.exists(path)) {
+  path %>%
+    dir.create(recursive = TRUE)
+}
 
 
 #### DOWNLOAD POPULATION GRID, BOUNDARY, FUNCTIONAL URBAN AREA, AND POSTCODE DATA =======
@@ -141,7 +147,7 @@ if (!file.exists(paste0(path, "/codes_postaux_region.shp"))) {
 }
 
 # united kingdom
-if (!file.exists(paste0(path, "/codigos_postales.shp"))) {
+if (!file.exists(paste0(path, "/Sectors.shp"))) {
   download.file(url = "https://www.opendoorlogistics.com/wp-content/uploads/Data/UK-postcode-boundaries-Jan-2015.zip",
                 destfile = paste0(path, "/uk_postcodes.zip"),
                 mode = "wb")
