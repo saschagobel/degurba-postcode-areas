@@ -79,29 +79,59 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 
 ### DEGURBA Level 2  - Postcode Areas
 
-# Country-specific Postcode Area Classification Maps
+# Country-specific Postcode Area Classification
 
 ### DEGURBA Level 1
 
 <p align="center">
   <b>France</b>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+    <img width="400" src="maps/fr_degurba_l1_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+    <img width="400" src="maps/fr_degurba_l1_postcode_map.png">
+  </a>
 </p>
 
 <p align="center">
   <b>Germany</b>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+    <img width="400" src="maps/de_degurba_l1_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+    <img width="400" src="maps/de_degurba_l1_postcode_map.png">
+  </a>
 </p>
 
 <p align="center">
   <b>Spain</b>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+    <img width="400" src="maps/es_degurba_l1_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+    <img width="400" src="maps/es_degurba_l1_postcode_map.png">
+  </a>
 </p>
 
 <p align="center">
   <b>Switzerland</b>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+    <img width="400" src="maps/ch_degurba_l1_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+    <img width="400" src="maps/ch_degurba_l1_postcode_map.png">
+  </a>
 </p>
 
 <p align="center">
   <b>United Kingdom</b> <br />
-  (Excluding Northern Irland and the Isle of Man)
+  (Excluding Northern Ireland)
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+    <img width="400" src="maps/uk_degurba_l1_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+    <img width="400" src="maps/uk_degurba_l1_postcode_map.png">
+  </a>
 </p>
 
 ### DEGURBA Level 2
