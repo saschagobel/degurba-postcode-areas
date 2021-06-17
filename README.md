@@ -34,7 +34,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 
 # Example: Part of the Rhine-Neckar Metropolitan Region
 
-#### Population Grid
+### Population Grid
 <p align="center">
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/pop_grid_map.png?token=AHDPXYME2LLX7R2QMJ5V3UDA2RPQW">
     <img width="400" src="maps/pop_grid_map.png">
