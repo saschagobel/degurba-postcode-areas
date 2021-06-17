@@ -55,10 +55,10 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 ### DEGURBA Level 2  - Grid
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_grid_map.png?token=AHDPXYJJVY7N4QVPD77ZY5LA2SJJI">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l2_grid_map.png?token=AHDPXYPXJDRQSUESSNQYCMTA2SKWW">
     <img width="400" src="maps/degurba_l2_grid_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_grid_fua_map.png?token=AHDPXYNW4VVHE7O4HEJ5VJ3A2SJK2">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l2_grid_fua_map.png?token=AHDPXYPMNO4CQLITZKL4E33A2SKXY">
     <img width="400" src="maps/degurba_l2_grid_fua_map.png">
   </a>
 </p>
