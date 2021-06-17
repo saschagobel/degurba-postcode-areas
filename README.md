@@ -38,8 +38,8 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
   <img width="500" src="maps/pop_grid_map.png">
 </p>
 <p align="center">
-  <img width="300" src="maps/pop_grid_map.png">
-  <img width="300" src="maps/pop_grid_map.png">
+  <img width="400" src="maps/pop_grid_map.png">
+  <img width="400" src="maps/pop_grid_map.png">
 </p>
 
 <p align="center">
