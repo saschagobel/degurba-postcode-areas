@@ -52,6 +52,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
   </a>
 </p>
 
+
 ### DEGURBA Level 2  - Grid
 
 <p align="center">
@@ -75,10 +76,15 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
   </a>
 </p>
 
+
 ### DEGURBA Level 2  - Postcode Areas
 
 # Country-specific Postcode Area Classification Maps
 
 ### DEGURBA Level 1
+
+<p align="center">
+  Germany
+</p>
 
 ### DEGURBA Level 2
