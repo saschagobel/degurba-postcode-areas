@@ -43,3 +43,17 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
     <img src="maps/ger.png" style="width:100%">
   </div>
 </div>
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
