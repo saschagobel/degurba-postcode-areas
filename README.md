@@ -35,12 +35,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 # Example: Germany region
 
 
- <a href="https://www.qries.com/">
-         <img alt="Qries" src="https://www.qries.com/images/banner_logo.png"
-         width=150" height="70">
-      </a>
-
-<a href="https://" align="center">
+<a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/pop_grid_map.png?token=AHDPXYME2LLX7R2QMJ5V3UDA2RPQW" align="center">
   <img width="500" src="maps/pop_grid_map.png">
 </a>
 <p align="center">
