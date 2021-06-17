@@ -84,7 +84,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 ### DEGURBA Level 1
 
 <p align="center">
-  <b>France</b>
+  <b>France</b><br />
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
     <img width="400" src="maps/fr_degurba_l1_postcode_map.png">
   </a>
