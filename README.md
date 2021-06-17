@@ -35,6 +35,11 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 # Example: Germany region
 
 
-<p align="center">
-  <img width="500" src="maps/ger.png">
-</p>
+<div class="row">
+  <div class="column">
+    <img src="maps/ger.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="maps/ger.png" style="width:100%">
+  </div>
+</div>
