@@ -84,7 +84,24 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 ### DEGURBA Level 1
 
 <p align="center">
-  #### Germany
+  <b>France</b>
+</p>
+
+<p align="center">
+  <b>Germany</b>
+</p>
+
+<p align="center">
+  <b>Spain</b>
+</p>
+
+<p align="center">
+  <b>Switzerland</b>
+</p>
+
+<p align="center">
+  <b>United Kingdom</b> <br />
+  (Excluding Northern Irland and the Isle of Man)
 </p>
 
 ### DEGURBA Level 2
