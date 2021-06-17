@@ -94,7 +94,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 </p>
 
 <p align="center">
-  <b>Germany</b>
+  <b>Germany</b><br />
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
     <img width="400" src="maps/de_degurba_l1_postcode_map.png">
   </a>
@@ -104,7 +104,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 </p>
 
 <p align="center">
-  <b>Spain</b>
+  <b>Spain</b><br />
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
     <img width="400" src="maps/es_degurba_l1_postcode_map.png">
   </a>
@@ -114,7 +114,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 </p>
 
 <p align="center">
-  <b>Switzerland</b>
+  <b>Switzerland</b><br />
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
     <img width="400" src="maps/ch_degurba_l1_postcode_map.png">
   </a>
@@ -125,7 +125,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 
 <p align="center">
   <b>United Kingdom</b> <br />
-  (Excluding Northern Ireland)
+  (Excluding Northern Ireland)<br />
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
     <img width="400" src="maps/uk_degurba_l1_postcode_map.png">
   </a>
