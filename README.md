@@ -4,18 +4,15 @@ This repository contains R code to implement level 1 and 2 of the degree of urba
 
 # Data sources
 
-The classification is based on the following data sources. Data are downloaded with the data.R script.
+The classification is based on the following data sources. Data can be downloaded with the [data.R](../blob/master/code/data.R) script.
 
-2018 GEOSTAT 1sqkm population grids
+* 2018 GEOSTAT 1sqkm population grids
 https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/population-distribution-demography/geostat
-
-2021 NUTS0 country border polygons
+* 2021 NUTS0 country border polygons
 https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21
-
-2018 Urban audit data including functional urban areas
+* 2018 Urban audit data including functional urban areas
 https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/urban-audit#ua18
-
-Postcode areas for France (), Germany (), Spain (), Switzerland (), and the United Kingdom ().
+* Postcode areas for France (), Germany (), Spain (), Switzerland (), and the United Kingdom ().
 
 
 # Classification procedure
