@@ -10,11 +10,11 @@ The classification is based on the following data sources. Data can be downloade
 * [2021 NUTS0 country border polygons](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21)
 * [2018 Urban audit data including functional urban areas](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/urban-audit#ua18)
 * Postcode areas for:
-   * [France]()
-   * [Germany]()
-   * [Spain]()
-   * [Switzerland]()
-   * [United Kingdom]()
+   * [France](5-digit)
+   * [Germany](5-digit)
+   * [Spain](5-digit)
+   * [Switzerland](4-digit)
+   * [United Kingdom](Postcode Sectors)
 
 # Classification procedure
 
