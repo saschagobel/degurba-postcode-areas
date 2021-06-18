@@ -6,7 +6,8 @@ This repository contains R code to implement level 1 and 2 of the degree of urba
 
 The classification is based on the following data sources. Data can be downloaded with the [data.R](../blob/master/code/data.R) script.
 
-* 2018 GEOSTAT 1sqkm population grids
+*2018 GEOSTAT 1sqkm population grids
+
 https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/population-distribution-demography/geostat
 * 2021 NUTS0 country border polygons
 https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21
