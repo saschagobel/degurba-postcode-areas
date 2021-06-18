@@ -1,12 +1,6 @@
 # The Degree of Urbanisation Classification<br />for Postcode Areas
 
-This repository contains R code to implement level 1 and 2 of the degree of urbanisation (DEGURBA) classification (see Dijkstra et al 2020 and Eurostat 2021) and to superimpose the grid cell classifications on postcode areas. The procedure is applied for five countries: France, Germany, Spain, Switzerland, and the United Kingdom.
-
-Eurostat 2021
-https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499
-
-Dijkstra et al 2020
-https://www.sciencedirect.com/science/article/pii/S0094119020300838#cit_5
+This repository contains R code to implement level 1 and 2 of the degree of urbanisation (DEGURBA) classification (see [Dijkstra et al 2020](https://www.sciencedirect.com/science/article/pii/S0094119020300838#cit_5) and [Eurostat 2021](https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499)) and to superimpose the grid cell classifications on postcode areas. The procedure is applied for five countries: France, Germany, Spain, Switzerland, and the United Kingdom.
 
 # Data sources
 
