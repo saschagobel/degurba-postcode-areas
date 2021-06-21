@@ -291,6 +291,11 @@ uk_postcode_polygons <- sf::st_read("data/postcode_areas/Sectors.shp") %>%
 es_postcode_polygons <- es_postcode_polygons %>%
   sf::st_crop(es_cntr_polygon)
 
+# combine postcode polygons (where required) --------------------------------------------
+es_postcode_polygons <- es_postcode_polygons %>% 
+  group_by(COD_POSTAL) %>%
+  summarise(geometry = st_union(geometry))
+
 # save postcode polygons ----------------------------------------------------------------
 sf::write_sf(ch_postcode_polygons, "./data/postcode_areas/ch_postcode_polygons.shp")
 sf::write_sf(de_postcode_polygons, "./data/postcode_areas/de_postcode_polygons.shp")
