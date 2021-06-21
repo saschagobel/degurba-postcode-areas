@@ -18,7 +18,7 @@ The classification is based on the following data sources. Data can be downloade
 
 # Classification procedure
 
-The degree of urbanisation offers a common classification scheme of the urban-rural continuum that facilitates cross-national comparability. It was developed by the European Commission, the Food and Agriculture Organization of the United Nations, the United Nations Human Settlements Programme, the International Labour Organisation, the Organisation for Economic Co-operation and Development, and The World Bank. The methodology is described in detail in [Eurostat 2021](https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499).
+The degree of urbanisation offers a common classification scheme of the urban-rural continuum that facilitates cross-national comparability. It was developed by the European Commission, the Food and Agriculture Organization of the United Nations, the United Nations Human Settlements Programme, the International Labour Organisation, the Organisation for Economic Co-operation and Development, and The World Bank. The methodology is described in detail in [Eurostat (2021)](https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499).
 
 The classification is applied in two steps. First, 1 sq km grid cells are classified based on population density and contiguity. Second, spatial units are classified based on the share of their population in classified grid cells. Two classification levels allow for varying granularity of the urban-rural continuum. Here is an overview of category definitions for both levels.
 
