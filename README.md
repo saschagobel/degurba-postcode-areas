@@ -10,10 +10,10 @@ The classification is based on the following data sources. Data can be downloade
 * [2021 NUTS0 country border polygons](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21)
 * [2018 Urban audit data including functional urban areas](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/urban-audit#ua18)
 * Postcode areas for:
-   * [France](5-digit)
-   * [Germany](5-digit)
-   * [Spain](5-digit)
-   * [Switzerland](4-digit)
+   * [France]()(5-digit)
+   * [Germany]()(5-digit)
+   * [Spain]()(5-digit)
+   * [Switzerland]()(4-digit)
    * [United Kingdom](Postcode Sectors)
 
 # Classification procedure
@@ -70,6 +70,14 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 
 
 ### DEGURBA Level 2  - Postcode Areas
+<p align="center">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+    <img width="400" src="maps/degurba_l2_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+    <img width="400" src="maps/degurba_l2_postcode_fua_map.png">
+  </a>
+</p>
 
 # Country-specific Postcode Area Classification
 
@@ -81,7 +89,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
     <img width="400" src="maps/fr_degurba_l1_postcode_map.png">
   </a>
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
-    <img width="400" src="maps/fr_degurba_l1_postcode_map.png">
+    <img width="400" src="maps/fr_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
@@ -91,7 +99,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
     <img width="400" src="maps/de_degurba_l1_postcode_map.png">
   </a>
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
-    <img width="400" src="maps/de_degurba_l1_postcode_map.png">
+    <img width="400" src="maps/de_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
@@ -101,7 +109,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
     <img width="400" src="maps/es_degurba_l1_postcode_map.png">
   </a>
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
-    <img width="400" src="maps/es_degurba_l1_postcode_map.png">
+    <img width="400" src="maps/es_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
@@ -111,7 +119,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
     <img width="400" src="maps/ch_degurba_l1_postcode_map.png">
   </a>
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
-    <img width="400" src="maps/ch_degurba_l1_postcode_map.png">
+    <img width="400" src="maps/ch_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
@@ -122,7 +130,7 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
     <img width="400" src="maps/uk_degurba_l1_postcode_map.png">
   </a>
   <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
-    <img width="400" src="maps/uk_degurba_l1_postcode_map.png">
+    <img width="400" src="maps/uk_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
