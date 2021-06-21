@@ -71,10 +71,10 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 
 ### DEGURBA Level 2  - Postcode Areas
 <p align="center">
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l2_postcode_map.png?token=AHDPXYKRQP5O4QH3YU446KTA3F2QQ">
     <img width="400" src="maps/degurba_l2_postcode_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l2_postcode_fua_map.png?token=AHDPXYNKNQM4522HBX4OGJLA3F2SU">
     <img width="400" src="maps/degurba_l2_postcode_fua_map.png">
   </a>
 </p>
@@ -85,40 +85,40 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 
 <p align="center">
   <b>France</b><br />
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/fr_degurba_l1_postcode_map.png?token=AHDPXYOU2RY7IL77ZUUOJG3A3F2WK">
     <img width="400" src="maps/fr_degurba_l1_postcode_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/fr_degurba_l1_postcode_fua_map.png?token=AHDPXYK2VXGUY3UTLQXDXU3A3F2XQ">
     <img width="400" src="maps/fr_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
 <p align="center">
   <b>Germany</b><br />
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/de_degurba_l1_postcode_map.png?token=AHDPXYMIB4JIBV6CM2E3FW3A3F2ZA">
     <img width="400" src="maps/de_degurba_l1_postcode_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/de_degurba_l1_postcode_fua_map.png?token=AHDPXYM7QNJ5T7MPJYUAGETA3F22U">
     <img width="400" src="maps/de_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
 <p align="center">
   <b>Spain</b><br />
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/es_degurba_l1_postcode_map.png?token=AHDPXYJ5U3YDZFQ33U4OCLTA3F26I">
     <img width="400" src="maps/es_degurba_l1_postcode_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/es_degurba_l1_postcode_fua_map.png?token=AHDPXYMVLEOA6V2SDLUDJSLA3F3AW">
     <img width="400" src="maps/es_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
 <p align="center">
   <b>Switzerland</b><br />
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/ch_degurba_l1_postcode_map.png?token=AHDPXYM2ZURVZS7OR5LERNLA3F3FM">
     <img width="400" src="maps/ch_degurba_l1_postcode_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/ch_degurba_l1_postcode_fua_map.png?token=AHDPXYLBWQXCMFO7C5AG7XLA3F3HC">
     <img width="400" src="maps/ch_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
@@ -126,12 +126,63 @@ Level 1 ... Level 2 further ... Functional urban areas ... To superimpose on spa
 <p align="center">
   <b>United Kingdom</b> <br />
   (Excluding Northern Ireland)<br />
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_map.png?token=AHDPXYL5F4EVQOCNXI5B3PDA2SNLG">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/uk_degurba_l1_postcode_map.png?token=AHDPXYI6SWP3N4HXOWX6BF3A3F3IG">
     <img width="400" src="maps/uk_degurba_l1_postcode_map.png">
   </a>
-  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/degurba_l1_postcode_fua_map.png?token=AHDPXYJGDICVA3JM77KWLPDA2SNNU">
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/uk_degurba_l1_postcode_fua_map.png?token=AHDPXYOKROM2PRTI6BGU5CTA3F3JK">
     <img width="400" src="maps/uk_degurba_l1_postcode_fua_map.png">
   </a>
 </p>
 
 ### DEGURBA Level 2
+
+<p align="center">
+  <b>France</b><br />
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/fr_degurba_l1_postcode_map.png?token=AHDPXYOU2RY7IL77ZUUOJG3A3F2WK">
+    <img width="400" src="maps/fr_degurba_l2_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/fr_degurba_l1_postcode_fua_map.png?token=AHDPXYK2VXGUY3UTLQXDXU3A3F2XQ">
+    <img width="400" src="maps/fr_degurba_l2_postcode_fua_map.png">
+  </a>
+</p>
+
+<p align="center">
+  <b>Germany</b><br />
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/de_degurba_l1_postcode_map.png?token=AHDPXYMIB4JIBV6CM2E3FW3A3F2ZA">
+    <img width="400" src="maps/de_degurba_l2_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/de_degurba_l1_postcode_fua_map.png?token=AHDPXYM7QNJ5T7MPJYUAGETA3F22U">
+    <img width="400" src="maps/de_degurba_l2_postcode_fua_map.png">
+  </a>
+</p>
+
+<p align="center">
+  <b>Spain</b><br />
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/es_degurba_l1_postcode_map.png?token=AHDPXYJ5U3YDZFQ33U4OCLTA3F26I">
+    <img width="400" src="maps/es_degurba_l2_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/es_degurba_l1_postcode_fua_map.png?token=AHDPXYMVLEOA6V2SDLUDJSLA3F3AW">
+    <img width="400" src="maps/es_degurba_l2_postcode_fua_map.png">
+  </a>
+</p>
+
+<p align="center">
+  <b>Switzerland</b><br />
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/ch_degurba_l1_postcode_map.png?token=AHDPXYM2ZURVZS7OR5LERNLA3F3FM">
+    <img width="400" src="maps/ch_degurba_l2_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/ch_degurba_l1_postcode_fua_map.png?token=AHDPXYLBWQXCMFO7C5AG7XLA3F3HC">
+    <img width="400" src="maps/ch_degurba_l2_postcode_fua_map.png">
+  </a>
+</p>
+
+<p align="center">
+  <b>United Kingdom</b> <br />
+  (Excluding Northern Ireland)<br />
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/uk_degurba_l1_postcode_map.png?token=AHDPXYI6SWP3N4HXOWX6BF3A3F3IG">
+    <img width="400" src="maps/uk_degurba_l2_postcode_map.png">
+  </a>
+  <a href="https://raw.githubusercontent.com/saschagobel/degurba-postcode-areas/master/maps/uk_degurba_l1_postcode_fua_map.png?token=AHDPXYOKROM2PRTI6BGU5CTA3F3JK">
+    <img width="400" src="maps/uk_degurba_l2_postcode_fua_map.png">
+  </a>
+</p>
