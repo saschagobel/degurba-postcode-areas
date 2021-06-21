@@ -432,7 +432,7 @@ get_spatial_classification_l2 <- function(grid_classification, spatial_classific
                                                 degurba_l1 == "rural areas" &
                                                   rural_cluster_pop > low_density_rural_cells_pop & rural_cluster_pop > very_low_density_rural_cells_pop ~ "villages",
                                                 degurba_l1 == "rural areas" &
-                                                  low_density_rural_cells_pop > rural_cluster_pop & low_density_rural_cells_pop > + very_low_density_rural_cells_pop ~ "dispersed rural areas",
+                                                  low_density_rural_cells_pop > rural_cluster_pop & low_density_rural_cells_pop > very_low_density_rural_cells_pop ~ "dispersed rural areas",
                                                 degurba_l1 == "rural areas" &
                                                   very_low_density_rural_cells_pop > rural_cluster_pop & very_low_density_rural_cells_pop > low_density_rural_cells_pop ~ "mostly uninhabited rural areas"),
                                       levels = c("cities", "dense towns", "semi-dense towns", "suburban areas", "villages", "dispersed rural areas", "mostly uninhabited rural areas"))) %>%
