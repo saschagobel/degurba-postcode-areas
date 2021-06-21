@@ -105,7 +105,7 @@ saveRDS(postcode_classifications, "./data/postcode_classifications")
 
 # extract classified postcode lists -----------------------------------------------------
 ch_postcode_degurba <- postcode_classifications[[1]] %>%
-  dplyr::select(degurba_l1:fua_metro, postcode = PLZ)
+  dplyr::select(degurba_l1:fua_metro, postcode = PLZ, supplement = ZUSZIFF)
 de_postcode_degurba <- postcode_classifications[[2]] %>%
   dplyr::select(degurba_l1:fua_metro, postcode = plz)
 es_postcode_degurba <- postcode_classifications[[3]] %>%
