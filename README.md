@@ -46,13 +46,13 @@ The classification is applied in two steps. First, 1sq km grid cells are classif
 3. *rural areas*: > 50% of spatial unit population in rural grid cells.
 
 #### Level 2
-1. *cities*:
-2. *dense towns*:
-3. *semi-dense towns*:
-4. *suburban areas*:
-5. *villages*:
-6. *dispersed rural areas*:
-7. *mostly uninhabited rural areas*:
+1. *cities*: same as for level 1.
+2. *dense towns*: towns and semi-dense areas with larger population share in dense than semi-dense urban clusters and larger population share in dense + semi-dense urban clusters than suburban cells.
+3. *semi-dense towns*: towns and semi-dense areas with larger population share in semi-dense than dense urban clusters and larger population share in dense + semi-dense urban clusters than suburban cells.
+4. *suburban areas*: towns and semi-dense areas with larger population share in suburban cells than dense + semi-dense urban clusters.
+5. *villages*: rural areas with largest population share in rural clusters.
+6. *dispersed rural areas*: rural areas with largest population share in low-density rural cells.
+7. *mostly uninhabited rural areas*: rural areas with largest population share in very low-density rural cells.
 
 Note that when superimposing the grid cell classifications on spatial units, the population of a grid cell is here always weighted by the fraction of the cell that is actually covered by the spatial unit/polygon.
 
