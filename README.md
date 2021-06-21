@@ -13,7 +13,7 @@ The classification is based on the following data sources. Data can be downloade
    * [France](https://www.data.gouv.fr/fr/datasets/fond-de-carte-des-codes-postaux/) (2014 5-digit postcodes)
    * [Germany](https://opendata-esri-de.opendata.arcgis.com/datasets/esri-de-content::postleitzahlengebiete-2018/about) (2020 5-digit postcodes)
    * [Spain](https://github.com/inigoflores/ds-codigos-postales) (2017 5-digit postcodes)
-   * [Switzerland](https://opendata.swiss/de/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter) (2021 4-digit postcodes)
+   * [Switzerland](https://opendata.swiss/de/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter) (2021 4-digit postcodes + supplementary digit)
    * [United Kingdom](https://www.opendoorlogistics.com/downloads/) (2015 postcode sectors)
 
 # Classification procedure
