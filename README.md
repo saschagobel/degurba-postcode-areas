@@ -25,34 +25,34 @@ The classification is applied in two steps. First, 1sq km grid cells are classif
 ### Grid cell classification:
 
 #### Level 1
-1. **urban centre**: contiguous (Rook's case) grid cells with population >= 1,500 inhabitants and collectively a population >= 50,000 inhabitants. Gaps are iteratively filled afterwards, see `majority_rule()` in [functions.R](../master/code/functions.R) script.
+1. *urban centre*: contiguous (Rook's case) grid cells with population >= 1,500 inhabitants and collectively a population >= 50,000 inhabitants. Gaps are iteratively filled afterwards, see `majority_rule()` in [functions.R](../master/code/functions.R) script.
 2. *urban cluster*: contiguous (Queen's case) grid cells with population >= 300 inhabitants and collectively a population >= 5,000 inhabitants. Urban centres are removed from urban clusters afterwards.
-3. rural cells: grid cells that are neither urban centres nor urban clusters.
+3. *rural cells*: grid cells that are neither urban centres nor urban clusters.
 
 #### Level 2
-1. urban centre:
-2. dense urban cluster:
-3. semi-dense urban cluster
-4. suburban cells:
-5. rural cluster:
-6. low-density rural cells:
-7. very low-density rural cells:
+1. *urban centre*:
+2. *dense urban cluster*:
+3. *semi-dense urban cluster*:
+4. *suburban cells*:
+5. *rural cluster*:
+6. *low-density rural cells*:
+7. *very low-density rural cells*:
 
 ### Spatial unit classification
 
 #### Level 1
-1. cities:
-2. towns and semi-dense areas:
-3. rural areas:
+1. *cities*:
+2. *towns and semi-dense areas*:
+3. *rural areas*:
 
 #### Level 2
-1. cities:
-2. dense towns:
-3. semi-dense towns:
-4. suburban areas:
-5. villages
-6. dispersed rural areas
-7. mostly uninhabited rural areas
+1. *cities*:
+2. *dense towns*:
+3. *semi-dense towns*:
+4. *suburban areas*:
+5. *villages*:
+6. *dispersed rural areas*:
+7. *mostly uninhabited rural areas*:
 
 In addition to ...
 
