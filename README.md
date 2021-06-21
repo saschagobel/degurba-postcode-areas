@@ -1,20 +1,20 @@
 # The Degree of Urbanisation Classification<br />for Postcode Areas
 
-This repository contains R code to implement level 1 and 2 of the degree of urbanisation (DEGURBA) classification (see [Dijkstra et al 2020](https://www.sciencedirect.com/science/article/pii/S0094119020300838#cit_5) and [Eurostat 2021](https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499)) and to superimpose the grid cell classifications on postcode areas. The procedure is applied for five countries: France, Germany, Spain, Switzerland, and the United Kingdom.
+This repository contains R code to implement level 1 and 2 of the degree of urbanisation (DEGURBA) classification (see [Dijkstra et al 2020](https://www.sciencedirect.com/science/article/pii/S0094119020300838#cit_5) and [Eurostat 2021](https://ec.europa.eu/eurostat/en/web/products-manuals-and-guidelines/-/ks-02-20-499)) and to superimpose the grid cell classifications on postcode areas. The method is applied for five countries: France, Germany, Spain, Switzerland, and the United Kingdom.
 
 # Data sources
 
-The classification is based on the following data sources. Data can be downloaded with the [data.R](../master/code/data.R) script.
+The classification is based on the following data sources. Data can be downloaded with the [01-data.R](../master/code/01-data.R) script.
 
 * [2018 GEOSTAT 1sqkm population grids](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/population-distribution-demography/geostat)
 * [2021 NUTS0 country border polygons](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts21)
 * [2018 Urban audit data including functional urban areas](https://ec.europa.eu/eurostat/en/web/gisco/geodata/reference-data/administrative-units-statistical-units/urban-audit#ua18)
-* Postcode areas for:
-   * [France]()(5-digit)
-   * [Germany]()(5-digit)
-   * [Spain]()(5-digit)
-   * [Switzerland]()(4-digit)
-   * [United Kingdom](Postcode Sectors)
+* Postcode boundaries for:
+   * [France](https://www.data.gouv.fr/fr/datasets/fond-de-carte-des-codes-postaux/) (2014 5-digit postcodes)
+   * [Germany](https://opendata-esri-de.opendata.arcgis.com/datasets/esri-de-content::postleitzahlengebiete-2018/about) (2020 5-digit)
+   * [Spain](https://github.com/inigoflores/ds-codigos-postales) (2017 5-digit postcodes)
+   * [Switzerland](https://opendata.swiss/de/dataset/amtliches-ortschaftenverzeichnis-mit-postleitzahl-und-perimeter) (2021 4-digit postcodes)
+   * [United Kingdom](https://www.opendoorlogistics.com/downloads/) (2015 postcode sectors)
 
 # Classification procedure
 
