@@ -1,25 +1,52 @@
 # ---------------------------------------------------------------------------------------
 # DEGURBA POSTCODE AREAS
-# Sascha Göbel
-# Script for packages
+# Sascha Goebel
+# Script for downloading and processing data
 # June 2021
 # ---------------------------------------------------------------------------------------
 
 
-# imports -------------------------------------------------------------------------------
-cat(underline("IMPORTS"),"
-    ''
+# downloads and imports -----------------------------------------------------------------
+cat(underline("DOWNLOADS AND IMPORTS"),"
+    './data/cntr_polygons/NUTS_RG_01M_2021_3035_LEVL_0.shp'
+    './data/pop_grid/JRC_1K_POP_2018.tif'
+    './data/fua_polygons/URAU_RG_01M_2018_3035_FUA.shp'
+    './data/postcode_areas/PLZO_PLZ.shp'
+    './data/postcode_areas/OSM_PLZ_072019.shp'
+    './data/postcode_areas/codigos_postales.shp'
+    './data/postcode_areas/codes_postaux_region.shp'
+    './data/postcode_areas/Sectors.shp'
     ")
 
 # exports -------------------------------------------------------------------------------
 cat(underline("EXPORTS"),"
-    ''
+    './data/cntr_polygons/ch_cntr_polygon.shp'
+    './data/cntr_polygons/de_cntr_polygon.shp'
+    './data/cntr_polygons/es_cntr_polygon.shp'
+    './data/cntr_polygons/fr_cntr_polygon.shp'
+    './data/cntr_polygons/uk_cntr_polygon.shp'
+    './data/pop_grid/ch_pop_grid.tif'
+    './data/pop_grid/de_pop_grid.tif'
+    './data/pop_grid/es_pop_grid.tif'
+    './data/pop_grid/fr_pop_grid.tif'
+    './data/pop_grid/uk_pop_grid.tif'
+    './data/fua_polygons/ch_fua_polygons.shp'
+    './data/fua_polygons/de_fua_polygons.shp'
+    './data/fua_polygons/es_fua_polygons.shp'
+    './data/fua_polygons/fr_fua_polygons.shp'
+    './data/fua_polygons/uk_fua_polygons.shp'
+    './data/postcode_areas/ch_postcode_polygons.shp'
+    './data/postcode_areas/de_postcode_polygons.shp'
+    './data/postcode_areas/es_postcode_polygons.shp'
+    './data/postcode_areas/fr_postcode_polygons.shp'
+    './data/postcode_areas/uk_postcode_polygons.shp'
     ")
 
 # content -------------------------------------------------------------------------------
 cat(underline("CONTENT"),"
-  DOWNLOAD POPULATION GRID, BOUNDARY, FUNCTIONAL URBAN AREA, AND POSTCODE DATA
-  PROCESS BOUNDARY, POPULATION GRID, FUNCTIONAL URBAN AREA, AND POSTCODE DATA
+    Line 53 - PREPARATIONS
+    Line 73 - DOWNLOAD POPULATION GRID, BOUNDARY, FUNCTIONAL URBAN AREA, AND POSTCODE DATA
+    Line 189 - PROCESS BOUNDARY, POPULATION GRID, FUNCTIONAL URBAN AREA, AND POSTCODE DATA
     ")
 
 
@@ -29,7 +56,7 @@ cat(underline("CONTENT"),"
 rm(list=ls(all=TRUE))
 
 # set working directory -----------------------------------------------------------------
-setwd("D://projects/rude/")
+setwd("degurba-postcode-areas")
 
 # install and load packages -------------------------------------------------------------
 source("./code/packages.R")

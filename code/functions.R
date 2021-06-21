@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------------------
 # DEGURBA POSTCODE AREAS
-# Sascha Göbel
+# Sascha Goebel
 # Script for functions
 # June 2021
 # ---------------------------------------------------------------------------------------
@@ -8,15 +8,15 @@
 
 # content -------------------------------------------------------------------------------
 cat(underline("FUNCTIONS"),"
-  drop_clusters
-  get_adjacent_cells
-  get_contiguous_cells
-  majority_rule
-  get_grid_classification_l1
-  get_grid_classification_l2
-  get_fua
-  get_spatial_classification_l1
-  get_spatial_classification_l2
+    Line 23 - drop_clusters
+    Line 33 - get_adjacent_cells
+    Line 53 - get_contiguous_cells
+    Line 76 - majority_rule
+    Line 103 - get_grid_classification_l1
+    Line 198 - get_grid_classification_l2
+    Line 319 - get_fua
+    Line 349 - get_spatial_classification_l1
+    Line 400 - get_spatial_classification_l2
   ")
 
 
@@ -316,7 +316,7 @@ get_grid_classification_l2 <- function(pop_grid, uninhabited_na = TRUE) {
 }
 
 
-#### get_fua_layer ======================================================================
+#### get_fua ============================================================================
 
 get_fua <- function(pop_grid, fua_polygon) {
   
@@ -376,10 +376,11 @@ get_spatial_classification_l1 <- function(grid_classification, polygons, fua = F
                      rural_grid_pop = sum(pop1sqkm[rural_grid == 1]*coverage_fraction[rural_grid == 1], na.rm = TRUE),
                      fua_pop = eval(fua_expr),
                      fua_metro_pop = eval(fua_metro_expr)) %>%
+    dplyr::mutate(total_pop = ifelse(total_pop == 0, NA, total_pop)) %>%
     dplyr::mutate(degurba_l1 = factor(case_when(urban_centre_pop >= total_pop*0.5 ~ "cities",
                                                 urban_centre_pop < total_pop*0.5 & 
                                                   rural_grid_pop <= total_pop*0.5 ~ "towns and semi-dense areas",
-                                                rural_grid_pop > total_pop*0.5 ~ "rural areas"),
+                                                rural_grid_pop > total_pop*0.5 | is.na(total_pop) ~ "rural areas"),
                                       levels = c("cities", "towns and semi-dense areas", "rural areas")))
   if (fua == TRUE) {
     polygon_values <- polygon_values %>%
@@ -433,7 +434,10 @@ get_spatial_classification_l2 <- function(grid_classification, spatial_classific
                                                 degurba_l1 == "rural areas" &
                                                   low_density_rural_cells_pop > rural_cluster_pop & low_density_rural_cells_pop > + very_low_density_rural_cells_pop ~ "dispersed rural areas",
                                                 degurba_l1 == "rural areas" &
-                                                  very_low_density_rural_cells_pop > rural_cluster_pop & very_low_density_rural_cells_pop > low_density_rural_cells_pop ~ "mostly uninhabited rural areas")))
+                                                  very_low_density_rural_cells_pop > rural_cluster_pop & very_low_density_rural_cells_pop > low_density_rural_cells_pop ~ "mostly uninhabited rural areas"),
+                                      levels = c("cities", "dense towns", "semi-dense towns", "suburban areas", "villages", "dispersed rural areas", "mostly uninhabited rural areas"))) %>%
+    dplyr::mutate(degurba_l2 = tidyr::replace_na(degurba_l2, "mostly uninhabited rural areas"))
+    
   if ("fua" %in% colnames(polygon_values)) {
     polygon_values <- polygon_values %>%
       dplyr::select(degurba_l1, degurba_l2, fua, fua_metro)

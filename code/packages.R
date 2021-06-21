@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------------------
 # DEGURBA POSTCODE AREAS
-# Sascha Göbel
+# Sascha Goebel
 # Script for packages
 # June 2021
 # ---------------------------------------------------------------------------------------
@@ -12,15 +12,16 @@
 suppressWarnings(if (!require("pacman")) install.packages("pacman"))
 
 # load packages and install if not installed --------------------------------------------
-pacman::p_load(dplyr,
+pacman::p_load(crayon,
+               dplyr,
+               exactextractr,
+               extrafont,
                magrittr,
                purrr,
-               crayon,
-               extrafont,
-               sf,
-               tmap,
                raster,
-               exactextractr,
+               sf,
+               tidyr,
+               tmap,
                install = TRUE,
                update = FALSE)
 
