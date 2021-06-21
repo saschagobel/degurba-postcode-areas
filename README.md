@@ -56,17 +56,7 @@ The classification is applied in two steps. First, 1sq km grid cells are classif
 
 Note that when superimposing the grid cell classifications on spatial units, the population of a grid cell is here always weighted by the fraction of the cell that is actually covered by the spatial unit/polygon.
 
-
-
-In addition to ...
-
-
-- accounting for partial polygon coverage of cells
-
-
-Functional urban areas ... to account for ...
-
-
+In addition, functional urban areas can be used to take commuting flows into cities into account. Here, NUTS3 functional urban area polygons from urban audit data are rasterized to make them available at the level of grid cells. Spatial units are classified as functional urban areas if >= 50% of spatial unit population reside in functional urban area grid cells.
 
 # Example: Part of the Rhine-Neckar Metropolitan Region
 
