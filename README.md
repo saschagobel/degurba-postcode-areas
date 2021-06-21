@@ -25,8 +25,8 @@ The classification is applied in two steps. First, 1sq km grid cells are classif
 ### Grid cell classification:
 
 #### Level 1
-1. urban centre: contiguous (Rook's case) grid cells with population >= 1,500 inhabitants and collectively a population >= 50,000 inhabitants. Gaps are iteratively filled afterwards, see `majority_rule()` in [functions.R](../master/code/functions.R) script.
-2. urban cluster: contiguous (Queen's case) grid cells with population >= 300 inhabitants and collectively a population >= 5,000 inhabitants. Urban centres are removed from urban clusters afterwards.
+1. *urban centre*: contiguous (Rook's case) grid cells with population >= 1,500 inhabitants and collectively a population >= 50,000 inhabitants. Gaps are iteratively filled afterwards, see `majority_rule()` in [functions.R](../master/code/functions.R) script.
+2. *urban cluster*: contiguous (Queen's case) grid cells with population >= 300 inhabitants and collectively a population >= 5,000 inhabitants. Urban centres are removed from urban clusters afterwards.
 3. rural cells: grid cells that are neither urban centres nor urban clusters.
 
 #### Level 2
