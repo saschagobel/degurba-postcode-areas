@@ -30,20 +30,20 @@ The classification is applied in two steps. First, 1sq km grid cells are classif
 3. *rural cells*: grid cells that are neither urban centres nor urban clusters.
 
 #### Level 2
-1. *urban centre*:
-2. *dense urban cluster*:
-3. *semi-dense urban cluster*:
-4. *suburban cells*:
-5. *rural cluster*:
-6. *low-density rural cells*:
-7. *very low-density rural cells*:
+1. *urban centre*: same as for level 1.
+2. *dense urban cluster*: urban cluster with contiguous (Rook's case) grid cells with population >= 1,500 inhabitants and collectively a population >= 5,000 and < 50,000 inhabitants.
+3. *semi-dense urban cluster*: urban cluster with contiguous (Queen's case) grid cells with population >= 300 inhabitants, collectively a population >= 5,000 inhabitants, and outside a buffer of three grid cells of an urban centre or a dense urban cluster.
+4. *suburban cells*: urban cluster cells that are neither part of dense or semi-dense urban clusters.
+5. *rural cluster*: rural cells with contiguous (Queen's case) grid cells with population >= 300 inhabitants and collectively a population >= 500 and < 5,000 inhabitants.
+6. *low-density rural cells*: rural cells with population >= 50 inhabitants and not part of a rural cluster.
+7. *very low-density rural cells*: rural cells with population < 50 inhabitants.
 
 ### Spatial unit classification
 
 #### Level 1
-1. *cities*:
-2. *towns and semi-dense areas*:
-3. *rural areas*:
+1. *cities*: >= 50% of spatial unit population in urban centres.
+2. *towns and semi-dense areas*: < 50% of spatial unit population in urban centres and <= 50% of spatial unit population in rural grid cells.
+3. *rural areas*: > 50% of spatial unit population in rural grid cells.
 
 #### Level 2
 1. *cities*:
@@ -54,8 +54,14 @@ The classification is applied in two steps. First, 1sq km grid cells are classif
 6. *dispersed rural areas*:
 7. *mostly uninhabited rural areas*:
 
+Note that when superimposing the grid cell classifications on spatial units, the population of a grid cell is here always weighted by the fraction of the cell that is actually covered by the spatial unit/polygon.
+
+
+
 In addition to ...
 
+
+- accounting for partial polygon coverage of cells
 
 
 Functional urban areas ... to account for ...
